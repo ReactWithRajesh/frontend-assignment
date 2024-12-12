@@ -19,7 +19,6 @@ const ProjectsTable = ({ activePage, pageSize }) => {
     fetchProjects();
   }, []);
 
-  console.log(projects)
 
   const startIndex = (activePage - 1) * pageSize;
   const currentProjects = projects?.slice(startIndex, startIndex + pageSize);
